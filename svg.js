@@ -1,10 +1,5 @@
 var clear = document.getElementById("clear");
 
-var isClear = true;
-
-var firstClick = false;
-var secondClick = false; 
-
 var pic = document.getElementById("vimage"); 
 
 //Clear Function: 
@@ -23,7 +18,6 @@ var clicked = function(e) {
 	console.log(e.toElement);
 	drawDot( e.offsetX, e.offsetY );
     }
-
 };
 
 //Drawing dots: 
@@ -42,9 +36,7 @@ var drawDot = function(x, y) {
     pic.appendChild(cl);
 
     //If dot is clicked on:
-    cl.addEventListener("click", changeColor); 
-    
-
+    cl.addEventListener("click", changeColor);   
 };
 
 //Changes color of the dot being clicked on
